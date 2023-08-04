@@ -74,7 +74,6 @@ export const logout = (req, res) => {
   res.status(200).send('User Logged Out.')
 }
 
-
 // Get Controllers
 export const profile = async (req, res) => {
   const user = await req.user

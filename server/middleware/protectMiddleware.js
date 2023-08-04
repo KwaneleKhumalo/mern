@@ -18,7 +18,7 @@ export const protect = async (req, res, next) => {
 export const adminProtect = async (req, res, next) => {
   const user = req.user;
 
-  if (user.isAdmin) {
+  if (user && user.isAdmin) {
     next()
   } else {
     res.status(401).json({msg: 'Not Authorized'})
