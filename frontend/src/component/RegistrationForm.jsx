@@ -36,7 +36,7 @@ const RegistrationForm = () => {
       const { data } = response.data
       sessionStorage.setItem("userInfo", JSON.stringify(data))
       navigate("/dashboard")
-      toast.success("Account Created Successfully! Please login.")
+      toast.success("Account Created Successfully!")
       clearForm()
     } catch (error) {
       toast.error(error.response.data)
