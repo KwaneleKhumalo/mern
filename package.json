@@ -1,14 +1,13 @@
 {
   "name": "@kwanele_khumalo/mern-bp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "MERN Boilerplate with basic Authentication",
   "files": [
+    "server",
     "frontend",
-    "server"
+    "package.json",
+    "README.md"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KwaneleKhumalo/mern.git"
