@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Navbar, Nav } from "react-bootstrap"
+import { Navbar, Nav, Button } from "react-bootstrap"
 import { Link, useNavigate } from "react-router-dom"
 import { USER_LOGOUT } from "../utils/endpoints"
 import { toast } from "react-toastify"
@@ -28,19 +28,18 @@ const AuthNav = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-dark">
-        {userInfo ? (
-          <Link to={"/dashboard"} className="navbar-brand text-light px-5">
-            Dashboard
-          </Link>
-        ) : (
-          <Link className="navbar-brand px-5 text-light" to="/">
-            Basic User Authentication
-          </Link>
-        )}
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="border text-light" />
-        <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar expand="md" className="bg-dark px-sm-5">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bg-light border ms-auto" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
+          {userInfo ? (
+            <Link to={"/dashboard"} className="navbar-brand text-light px-5 border">
+              Dashboard
+            </Link>
+          ) : (
+            <Link className="navbar-brand px-5 text-light" to="/">
+              Basic User Authentication
+            </Link>
+          )}
           <Nav className="ms-auto px-5 ">
             {userInfo ? (
               <Nav.Link className="nav-link text-secondary" onClick={handleLogout}>
