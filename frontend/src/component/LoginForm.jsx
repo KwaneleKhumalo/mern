@@ -14,21 +14,21 @@ const LoginForm = () => {
 
   const navigate = useNavigate()
 
-  const handleLogin = async e => {
-    e.preventDefault()
-    try {
-      const response = await axios.post(USER_LOGIN, { email, password }, { withCredentials: true })
-      const { data } = response.data
-      sessionStorage.setItem("userInfo", JSON.stringify(data))
-      toast.success(response.data.msg)
-      navigate("/dashboard")
-
-      setEmail("")
-      setPassword("")
-    } catch (err) {
-      toast.error(err.response.data)
-    }
+const handleLogin = async e => {
+  e.preventDefault()
+  try {
+    const response = await axios.post(USER_LOGIN, { email, password }, { withCredentials: true })
+    const { data } = response.data
+    sessionStorage.setItem("userInfo", JSON.stringify(data))
+    toast.success(response.data.msg)
+    navigate("/dashboard")
+    setEmail("")
+    setPassword("")
+  } catch (err) {
+    console.error(err) 
+    toast.error(err.response.data)
   }
+}
 
   return (
     <div>
@@ -36,7 +36,7 @@ const LoginForm = () => {
       <h1 className="text-center mt-5">Login</h1>
       <Row>
         <Col lg={3} className="border-0 mx-auto p-5 mt-5 rounded rounded-lg shadow shadow-lg">
-          <Form autoComplete="off" onSubmit={handleLogin}>
+          <Form autoComplete="off" onSubmit={handleLogin} noValidate>
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email: </Form.Label>
               <Form.Control type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
@@ -47,7 +47,8 @@ const LoginForm = () => {
               <Form.Control type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
             </Form.Group>
 
-            <Button type="submit" variant="success" disabled={!formCompleted(email, password)}>
+            <Button type="submit" variant="success">
+              {/* disabled={!formCompleted(email, password)} */}
               Login
             </Button>
             <Row>

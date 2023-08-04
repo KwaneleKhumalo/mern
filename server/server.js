@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
   res.send('connected!')
 })
 
-app.use('/users',protect, userRouter)
+app.use('/users', userRouter)
 
 
 runApp(app, port)
