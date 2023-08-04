@@ -1,11 +1,11 @@
 {
-  "name": "create-mern-bp-app",
-  "version": "1.0.0",
+  "name": "@kwanele_khumalo/mern-bp",
+  "version": "1.0.1",
   "description": "MERN Boilerplate with basic Authentication",
-  "main": "index.js",
-  "bin": {
-    "create-mern-bp-app": "./index.js"
-  },
+  "files": [
+    "frontend",
+    "server"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

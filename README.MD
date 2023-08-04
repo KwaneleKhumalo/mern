@@ -1,5 +1,7 @@
 # Getting Started with MERN-BP
 
+###### npm install mern-bp-app
+
 ## Folder & File Structure: 
 
 `.gitignore: ` Modify as you see fit.
