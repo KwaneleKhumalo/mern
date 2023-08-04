@@ -22,13 +22,13 @@ In the project directory, run:
 
 ##### Server Directory Structure: 
 
-# `Controllers`: Houses primary functions and exports them for routes
-# `Routes`: Houses primary routes
-# `Middleware`: Houses all your middleware functions
-# `Models`: Your schemas live here
-# `Utils` : Necessary Utility/Helper Functions
-# `.env` : Environment Variables. Keep all these secret
-# `server.js` : Entry File.
+### `Controllers`: Houses primary functions and exports them for routes
+### `Routes`: Houses primary routes
+### `Middleware`: Houses all your middleware functions
+### `Models`: Your schemas live here
+### `Utils` : Necessary Utility/Helper Functions
+### `.env` : Environment Variables. Keep all these secret
+### `server.js` : Entry File.
 
 
 ###### DISCLAIMER: 

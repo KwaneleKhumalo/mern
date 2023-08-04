@@ -1,10 +1,9 @@
 
 
-const Header = ({mainNav, authNav}) => {
+const Header = ({authNav}) => {
   return (
     <>
       {authNav}
-     {mainNav} 
     </>
   )
 }

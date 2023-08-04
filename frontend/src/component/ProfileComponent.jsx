@@ -6,15 +6,14 @@ import Header from "./Header"
 import AuthNav from "./AuthNav"
 import { useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
+import { CheckCookie } from "../utils/authValidation"
 
 const ProfileComponent = () => {
-  const [userInfo, setUserInfo] = useState()
-  const [email, setEmail] = useState()
-  const [firstName, setFirstName] = useState()
-  const [lastName, setLastName] = useState()
-  const [createdAt, setCreatedAt] = useState()
-  const [isAdmin, setIsAdmin] = useState()
-  const navigate = useNavigate()
+  const [email, setEmail] = useState("")
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [createdAt, setCreatedAt] = useState("")
+  const navigate = useNavigate("")
 
   const getUserProfile = async () => {
     const response = await axios.get(`${PROFILE}`, { withCredentials: true })
@@ -24,13 +23,11 @@ const ProfileComponent = () => {
       setFirstName(response.data.userData.firstName)
       setLastName(response.data.userData.lastName)
       setCreatedAt(response.data.userData.createdAt)
-      setIsAdmin(response.data.userData.isAdmin)
     }
   }
 
   const user = JSON.parse(sessionStorage.getItem("userInfo"))
   
-
   useEffect(() => {
     if (!user) {
       navigate("/login")
@@ -67,7 +64,6 @@ const ProfileComponent = () => {
         </Col>
         <Col lg={12}>
           <h2 className="text-center" style={styles}>
-            {" "}
             Membership Details
           </h2>
         </Col>

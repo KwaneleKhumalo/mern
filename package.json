@@ -1,0 +1,32 @@
+{
+  "name": "create-mern-bp-app",
+  "version": "1.0.0",
+  "description": "MERN Boilerplate with basic Authentication",
+  "main": "index.js",
+  "bin": {
+    "create-mern-bp-app": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KwaneleKhumalo/mern.git"
+  },
+  "keywords": [
+    "MERN",
+    "React",
+    "Express",
+    "Mongodb",
+    "NoSQL",
+    "jwt",
+    "mongoose",
+    "bootstrap"
+  ],
+  "author": "Kwanele Khumalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KwaneleKhumalo/mern/issues"
+  },
+  "homepage": "https://github.com/KwaneleKhumalo/mern#readme"
+}

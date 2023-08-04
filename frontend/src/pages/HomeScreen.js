@@ -1,10 +1,10 @@
+import AuthNav from '../component/AuthNav'
 import Header from '../component/Header'
-import MainNav from '../component/MainNav'
 
 const HomeScreen = () => {
   return (
     <>
-      <Header mainNav={ <MainNav /> } />
+      <Header authNav={<AuthNav />} />
     </>
   )
 }

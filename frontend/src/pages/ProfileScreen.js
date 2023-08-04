@@ -1,4 +1,3 @@
-import React from 'react'
 import ProfileComponent from '../component/ProfileComponent'
 
 const ProfileScreen = () => {

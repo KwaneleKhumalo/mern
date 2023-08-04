@@ -1,21 +1,12 @@
-import Cookies from "js-cookie"
 import { toast } from "react-toastify"
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
-const textRegex = /^[a-zA-Z]+$/
 
-export const CheckCookie = () => {
-  const authCookie = Cookies.get("authentication")
-
-  if (authCookie) {
-    console.log(authCookie)
-    toast.success("Authenticated!")
-  } else {
-    toast.error("Not Authenticated!")
-  }
-}
 
 export const formValidation = (email, firstName, lastName, password, confirmPassword) => {
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
+  const textRegex = /^[a-zA-Z]+$/
+
 
   if (email === "" || !emailRegex.test(email)) {
     toast.error("Please enter a valid Email Address")

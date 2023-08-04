@@ -16,7 +16,6 @@ const AuthNav = () => {
   }
 
   const handleLogout = () => {
-    
     axios.post(USER_LOGOUT, null, { withCredentials: true })
     sessionStorage.clear()
     toast.info("Logged Out Successfully!")

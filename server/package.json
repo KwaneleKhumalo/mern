@@ -1,7 +1,7 @@
 {
-  "name": "mern_skeleton",
+  "name": "server",
   "version": "1.0.0",
-  "description": "full stack skeleton",
+  "description": "server",
   "main": "index.js",
   "type": "module",
   "scripts": {
