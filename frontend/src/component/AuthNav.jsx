@@ -32,7 +32,7 @@ const AuthNav = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bg-light border ms-auto" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
           {userInfo ? (
-            <Link to={"/dashboard"} className="navbar-brand text-light px-5 border">
+            <Link to={"/dashboard"} className="navbar-brand text-light px-5">
               Dashboard
             </Link>
           ) : (

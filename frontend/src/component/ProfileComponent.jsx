@@ -41,9 +41,9 @@ const ProfileComponent = () => {
       <Header authNav={<AuthNav />} />
       <Row>
         <Col lg={11} className="bg-light border p-5 text-dark border-0 shadow mb-5 mt-4 mx-auto">
-          <h3>{`${firstName} ${lastName}`}</h3>
-          <h6 className="text-muted border-bottom">{email}</h6>
-          <Row className="mt-5">
+          <h3 className="text-center text-lg-start">{`${firstName} ${lastName}`}</h3>
+          <h6 className="text-muted border-bottom text-center text-lg-start">{email}</h6>
+          <Row className="mt-5 mx-md-auto text-center text-lg-start">
             <Col lg={2}>
               <h6>Member Since</h6>
               <p className="text-secondary">{new Date(createdAt).toLocaleDateString("en-US")}</p>
