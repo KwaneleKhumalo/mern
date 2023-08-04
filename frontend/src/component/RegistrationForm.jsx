@@ -47,8 +47,8 @@ const RegistrationForm = () => {
     <>
       <Header authNav={<AuthNav />} />
       <h1 className="text-center mt-5">Sign-Up</h1>
-      <Row>
-        <Col lg={3} className="border-0 mx-auto p-5 mt-5 rounded rounded-lg shadow shadow-lg">
+      <Row className="px-5">
+        <Col lg={5} xl={3} className="border-0 mx-auto p-5 mt-5 rounded rounded-lg shadow shadow-lg">
           <Form onSubmit={handleForm} autoComplete="off" noValidate>
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email: </Form.Label>
@@ -68,7 +68,7 @@ const RegistrationForm = () => {
             <Form.Group className="mb-3" controlId="password">
               <Form.Label>Password:</Form.Label>
               <Form.Control type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-              <p className="text-secondary">At least 8 characters, one symbol, one letter, one number</p>
+              <p className="text-secondary text-center">At least 8 characters, one symbol, one letter, one number</p>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="confirmPassword">

@@ -28,7 +28,7 @@ const AuthNav = () => {
 
   return (
     <>
-      <Navbar expand="md" className="bg-dark px-sm-5">
+      <Navbar expand="md" className="bg-dark px-3">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="bg-light border ms-auto" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
           {userInfo ? (

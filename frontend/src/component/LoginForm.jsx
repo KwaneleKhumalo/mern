@@ -34,8 +34,8 @@ const handleLogin = async e => {
     <div>
       <Header authNav={<AuthNav />} />
       <h1 className="text-center mt-5">Login</h1>
-      <Row>
-        <Col lg={3} className="border-0 mx-auto p-5 mt-5 rounded rounded-lg shadow shadow-lg">
+      <Row className="px-5">
+        <Col lg={5} xl={3} sm={8} className="border-0 mx-auto p-5 mt-5 rounded rounded-lg shadow shadow-lg">
           <Form autoComplete="off" onSubmit={handleLogin} noValidate>
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email: </Form.Label>
