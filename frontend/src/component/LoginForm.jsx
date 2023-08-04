@@ -47,8 +47,7 @@ const handleLogin = async e => {
               <Form.Control type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
             </Form.Group>
 
-            <Button type="submit" variant="success">
-              {/* disabled={!formCompleted(email, password)} */}
+            <Button type="submit" variant="success" disabled={!formCompleted(email, password)}>
               Login
             </Button>
             <Row>
