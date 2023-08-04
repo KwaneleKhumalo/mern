@@ -1,4 +1,4 @@
-# Getting Started with Basic Authentication
+# Getting Started with MERN-BP-APP - React
 
 From The React Team: 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

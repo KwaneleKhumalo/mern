@@ -1,4 +1,4 @@
-# Getting Started with the Server Modules
+# Getting Started with the MERN-DB-APP - SERVER
 
 ## Install Server dependencies: 
 In the directory, run:
