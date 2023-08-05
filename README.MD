@@ -1,6 +1,6 @@
 # Getting Started with MERN-BP
 
-###### npm install mern-bp-app
+`npm i @kwanele_khumalo/mern-bp`
 
 ## Folder & File Structure: 
 
