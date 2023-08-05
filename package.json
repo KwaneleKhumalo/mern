@@ -1,6 +1,6 @@
 {
   "name": "@kwanele_khumalo/mern-bp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "MERN Boilerplate with basic Authentication",
   "files": [
     "server",
